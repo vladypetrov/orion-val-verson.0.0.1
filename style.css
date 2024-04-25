@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.background-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/IMG/real-estate-hero-img.webp'); /* Adding an RGBA overlay */
+    background-size: cover; /* Cover the entire area of the section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 80vh; /* Set a specific height, or adjust as needed */
+}
+
+.about-me-section {
+    background-color: #111111;
+    color: #fff;
+
+}
+
+.contact {
+    background-color: #040404;
+}
+
+footer {
+    background-color: #040404;
+}
