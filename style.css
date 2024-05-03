@@ -1,25 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
 
 .background-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/IMG/real-estate-hero-img.webp'); /* Adding an RGBA overlay */
-    background-size: cover; /* Cover the entire area of the section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    height: 80vh; /* Set a specific height, or adjust as needed */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/IMG/real-estate-hero-img.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 65vh;
+    overflow-y: auto;
+}
+
+.logo-img {
+    width: 75%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    margin-bottom: 1rem; /* Keeps some space below the image */
+  }
+
+
+/* Default size for mobile devices */
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 60px;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img {
+        width: 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand img {
+        width: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-brand img {
+        width: 150px;
+    }
+}
+
+
+/* Regular styling for paragraphs and headers */
+
+p, h1, h2 {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Unified button styling for all devices */
+.btn-lg {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+/* Media query for smaller screens, now applies up to 992px */
+@media (max-width: 1024px) {
+    .background-section {
+        padding: 20px;
+    }
+    .background-section .container {
+        padding: 10px;
+    }
+    p {
+        font-size: smaller;
+        line-height: 1.4;
+        text-align: justify;
+        margin-bottom: 0.5rem;
+        hyphens: auto;
+    }
+    /* Smaller button styles for tablet and mobile */
+    .btn-lg {
+        padding: 0.5rem 1rem; /* Smaller padding */
+        font-size: 0.875rem; /* Smaller font size */
+    }
 }
 
 .about-me-section {
     background-color: #111111;
     color: #fff;
-
 }
 
-.contact {
+
+
+.contact-section {
     background-color: #040404;
+    color: white;
+    padding: 5rem 0;
+  }
+
+  .social-link, .contact-link {
+    font-size: 26px; 
+    color: white; 
+    text-decoration: none;
+  }
+
+  .social-link:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .icon {
+    font-size: 1.25rem; /* 20px */
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+
+
+.no-border-card {
+    border: none !important; /* Removes the border */
+    box-shadow: none !important; /* Removes the shadow, if any */
 }
 
-footer {
-    background-color: #040404;
-}
+
+.footer {
+    color: #FFF; /* For better CSS maintenance, define colors via CSS */
+    padding: 2rem 0; /* Consistent padding */
+    background-color: #040404; /* Assuming you want a dark footer */
+  }
+
+  .footer hr {
+    border-color: #6c757d; /* Bootstrap's secondary text color for better integration */
+    margin: 2rem 0; /* Increased spacing around the HR */
+  }
+
+  .footer-link {
+    color: #ffc107; /* Bootstrap's warning color for consistency */
+    text-decoration: none; /* Style links without underlines */
+  }
+
+  .footer-link:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }
+
+  .footer-text {
+    color: #6c757d; /* Muted text color, assuming use of Bootstrap's text-muted class */
+    font-size: 0.875rem; /* Small text size for footer */
+  }

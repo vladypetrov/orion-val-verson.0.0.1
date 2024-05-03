@@ -1,0 +1,10 @@
+# Allowing all robots complete access
+User-agent: *
+Disallow:
+
+# Directing where the sitemap is located
+Sitemap: http://www.orioninspector.com/sitemap.xml
+
+# Additionally, if there are directories you do not wish to be crawled, you can specify them like this:
+# Disallow: /private/
+# Disallow: /tmp/
